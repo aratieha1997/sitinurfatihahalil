@@ -1,0 +1,1 @@
+The files contained in this repository are the property of Payd Pte Ltd. They are intended only for the purposes of an exercise. They must not be shared, published or used in anyway other than for the completion of the Payd engineering exercise.

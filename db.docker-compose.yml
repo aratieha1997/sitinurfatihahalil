@@ -1,0 +1,16 @@
+version: "3"
+services:
+  db:
+    image: postgres:10.14-alpine
+    container_name: payd-sql-exercise-postgres
+    environment:
+      POSTGRES_USER: userGood
+      POSTGRES_PASSWORD: passGood
+      POSTGRES_DB: sql-ex
+    ports:
+      - 5432:5432
+    volumes:
+      - payd-sql-exercise-postgres-data:/var/lib/postgresql/data
+      - ../build-db.sql:/docker-entrypoint-initdb.d/init.sql
+volumes:
+  payd-sql-exercise-postgres-data:
